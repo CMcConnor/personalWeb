@@ -1,21 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Header from './Header';
 import { Route,BrowserRouter, Switch } from 'react-router-dom';
 
-import Root from './Root'
+import Frontpage from './Frontpage'
 import Foo from './Foo'
-import Movie from './Movie'
+import Movies from './Movie'
 
 ReactDOM.render(
   <div>
-    <App />
+    <Header />
     <BrowserRouter>
       <Switch>
-        <Route exact path='/' component={Root}/>
+        <Route exact path='/' component={Frontpage}/>
         <Route path='/foo' component={Foo}/>
-        <Route exact path='/movies/:movieId' component={Movie}/>
+        <Route exact path='/movies/:movieId' component={Movies}/>
       </Switch>
     </BrowserRouter>
   </div>,
