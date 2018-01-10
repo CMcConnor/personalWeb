@@ -5,7 +5,6 @@ import Header from './Header';
 import { Route,BrowserRouter, Switch } from 'react-router-dom';
 
 import Frontpage from './Frontpage'
-import Foo from './Foo'
 import Movies from './Movie'
 
 ReactDOM.render(
@@ -14,7 +13,6 @@ ReactDOM.render(
     <BrowserRouter>
       <Switch>
         <Route exact path='/' component={Frontpage}/>
-        <Route path='/foo' component={Foo}/>
         <Route exact path='/movies/:movieId' component={Movies}/>
       </Switch>
     </BrowserRouter>
